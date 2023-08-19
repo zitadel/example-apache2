@@ -18,9 +18,10 @@ You can find the url to your discovery endpoint under "URLs":
 
 ### Configure Apache2
 
-Update the values in `zitadel-httpd.conf` with values from ZITADEL.
+1. Rename `example.auth_openidc-httpd.conf` to `auth_openidc-httpd.conf`
+2. Update the values in `auth_openidc-httpd.conf` with values from ZITADEL.
 
-zitadel-httpd.conf
+auth_openidc-httpd.conf
 ```
 OIDCProviderMetadataURL https://<your_domain>.zitadel.cloud/.well-known/openid-configuration
 OIDCClientID <client_id, eg 227791....@apache_test>
