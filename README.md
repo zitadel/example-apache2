@@ -7,7 +7,7 @@ For now, this is just a basic example. Needs some more love and review.
 ### Setup PKCE client in ZITADEL
 
 - Go to your organization and setup a new application with the type PKCE
-- When created go to the "Redirect Settings" and **enable Development Mode*
+- When created go to the "Redirect Settings" and *enable Development Mode*
 - Add the Redirect Uri `http://localhost:8080/secure/callback`
 - Add the Post Logout Uri `http://localhost:8080/index.html`
 ![Configuration](/img/configuration.png)
@@ -22,7 +22,8 @@ You can find the url to your discovery endpoint under "URLs":
 2. Update the values in `auth_openidc-httpd.conf` with values from ZITADEL.
 
 auth_openidc-httpd.conf
-```
+
+```jsx
 OIDCProviderMetadataURL https://<your_domain>.zitadel.cloud/.well-known/openid-configuration
 OIDCClientID <client_id, eg 227791....@apache_test>
 # OIDCRedirectURI is a vanity URL that must point to a path protected by this module but must NOT point to any content
